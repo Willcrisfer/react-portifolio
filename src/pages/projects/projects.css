@@ -1,0 +1,27 @@
+.projects {
+   margin-bottom: 16rem;
+   scroll-margin-top: 15rem;
+}
+
+.projects .projects__content {
+    max-width: 56rem;
+    margin: 0 auto 6rem;
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .projects__info .projects__item {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+

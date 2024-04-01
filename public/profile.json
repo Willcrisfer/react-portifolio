@@ -1,0 +1,75 @@
+{
+    "profile":
+    {"name" : "Willian Fernandes"
+    ,"descriptionFooter" : "Obrigado por permancer até aqui, estou disponivel nos contactos abaixo."
+    ,"homeDescription" : "Sou Natural de Belo Horizonte - MG (Brasil) tenho 28 anos e Vivo no Porto a 4 anos."
+    ,"aboutTitle" : "Who am I ?"
+    ,"aboutWhoAmI" : "Bom, se continuas aqui é porque deves ser o NELSON (: Ou gostou de mim então la vão mais informações Sobre Mim."
+    ,"aboutTitleTech" : "Musico -- Administrador de Sistemas -- Desenvolvedor"
+    ,"aboutSubtitleTech" : "Desenvolvedor? Estudando pra isso."
+    ,"aboutDescriptionMusic" :"#Musico -- Baterista -- Cantor -- Administrador de Sistemas -- Bom, se tem algo que eu goste de fazer tocar Bateria, eu batuco em coisas desde os meus 11 anos. Deve estar a pensar nos meus vizinhos (haha), bateria não é um instumento que passar desapercebido. Não tenho culpa ser Bom nisso :). Ahhh também me arrisco na Voz, sempre toquei e cantei na Igreja #fechadocomcristo , faço isso ainda Hoje, Ja tive uma banda musical e nos apresentamos algumas vezes, um otimo Tempo, mas a vida segue e as responsabilidades aumentam, mas isso me fez discrobrir outrs Paixões."
+    ,"aboutDescriptionTech1" : "#Tecnologia -- Tenho muitos dias e noites de Experiencia com Servidores,Redes,HelpDesk e outras coisitas que podes ver clicando no icone do linkedIn aqui nessa pagina, mas pouca com Programação, sempre foi um Bicho de 7 cabeças pra mim, mas desde o fim de 2023 resolvi fazer diferente então entramos em..."
+    ,"aboutDescriptionTech2" : "#Programação -- Um desafio que ainda estou a ultrapassar, no finzinho de Setembro de 2023 tive meu primeiro contato com Programação, uauuuu, sai da aula pensando (o que estou fazendo? What? Sera que consigo?) Bom, pelo menos estou tentando... acho que conseguindo... sei muito bem que tenho muitos Degraus a Subir, mas agora tenho a certeza de que Sou capaz"
+    ,"projectsTitle" : "Projetos em Destaque"
+    ,"projectsSubtitle" : "Um pouco das minhas paixões"
+    ,"skillsTitle" : "Minhas Principais Habilidades?"
+    ,"skillsSubtitle" : "Bom, ja percebeste que esse Portifolio é sobre Musica e Tecnologia, o que eu sei Fazer?"
+    ,"title" : "Frontend Developer"
+    ,"email" : "williancdsf950305@gmail.com"
+    ,"phone" : "(351) 913 965 124"
+
+    
+    ,"projects" : [
+        {   
+            "index" : 1,
+            "img" : "../src/assets/olddrums.jpg",
+            "title": "Um Kit de Bateria para quem não conheçe",
+            "description" : "Atualmente estou mais presente nos Rtimos musiciais Worship,Pop e Rock --- Nessa Foto eu estava estrenando minha nova SNARE (a caixa com as baquetas em cima) aiiii que coisa Linda.",
+            "link" : "https://youtu.be/EaqkoxkrCh4?si=QuOPfzowepD5hhYU"
+        },
+        {
+            "index" : 2,
+            "img" :"../src/assets/git.png",
+            "title": "O meu Primeiro Projeto em HTML e CSS",
+            "description" : "Confesso que ainda não esta finalizado e hoje eu percebo muito mais sobre o que estou fazendo, mas tenho orgulho desse trabalho.",
+            "link" : "https://github.com/Willcrisfer/HTML-CSS.git"
+        },
+        {   
+            "index" : 3,
+            "img" :"../src/assets/sticks.jpg",
+            "title": "Mais Música pra Vocês",
+            "description" : "Essa Foto é apenas uma amostra da bateria que tenho em casa, felizmente para meus vizinhso ele é eletrônica (modelo Millenium MPS 750X) Please Use Phones e Aproveite",
+            "link" : "https://youtu.be/UEqU3qs7spU?si=o0FTOe_Gf771UrEW"
+        }
+
+    ]
+    ,"skills" : [
+        {   
+            
+            "index" : 1,
+            "img": "../src/assets/macbook.png",
+            "title" : "Tecnology Expert",
+            "description" : "Seu PC esta Lento? Deixa comigo... Seu PC não funciona? Deixa comigo... Sua empresa precisa de um Bom profissional em gestão de servidores e Redes? Deixa comigo... Quer me contratar como Desenvolvedor Junior? TO DENTRO."        },
+        {
+            
+            "index" : 2,
+            "img": "../src/assets/drums.png",
+            "title" : "Like a Drumer",
+            "description" : "Eu realmente AMO tocar bateria, tenho uma em casa e sinto que não a uso o quanto deveria... Toco sempre que posso e amo isso... Ainda tenho o sonho de fazer algo grande como baterista, particpar de uma boa Banda Musical, gravar musicas de sucesso... Sera que sou o unico Baterista com esse Sonho?" 
+        },
+        {   
+            "index" : 3,
+            "img": "../src/assets/microfone.png",
+            "title" : "Like a Singer",
+            "description" : "Olhem Bem, não sou nenhum Bill Whiters, mas me viro Bem, sinto que posso ser melhor e tenho planos para estudar  para conseguir a melhor identidade Vocal e enfeitiçar as pessoas com minha ela haha. Atualmente canto pelo menos 1 vez por mes e dizem que continuo Bem... #vaiestudarwillian" 
+        },
+        {   
+            "index" : 4,
+            "img": "../src/assets/coracao.png",
+            "title" : "Lovely",
+            "description" : "Bom, eu costumo gostar das pessoas, as vezes não sou muito falante, mas se eu gostar de Voce, não saio mais do seu Pé... Busco ser verdadeiro e ser a melhor pessoa que eu puder... Espero que tambem sejam assim Comigo... (NELSON---TENHA PIEDADE DA MINHA ALMA)" 
+        }
+     
+    ]
+}}
+
