@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import imgprofile from "../../assets/profile.jpg";
+import imgprofile from "../../assets/profile.png";
 import abstract from "../../assets/abstract.svg";
 import { NavLink } from "react-router-dom";
 import { useProfile } from "../../context/ProfileContext";
