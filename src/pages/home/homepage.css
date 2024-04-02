@@ -1,6 +1,6 @@
 
 
-header {
+section#home {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,28 +8,28 @@ header {
     scroll-margin-top: 20 rem;
 }
 
-header .header__left {
+section .home__left {
     max-width: 62 rem;
     flex: 1;
 }
 
-header .header__left p {
+section .home__left p {
     max-width: 50rem;
     margin-top: 2rem;
     margin-bottom: 4rem ;
 }
 
-header .header__right .header__image{
+section .home__right .home__image{
   position: relative;
   line-height: 0;
 }
 
-header .header__right .header__image::after{
+section .home__right .home__image::after{
     content: "";
     display: block;
     width: 80%;
-    height: 100%;
-    border: 1px solid var(--tertiary-color);
+    height: 102%;
+    border: 1px solid var(--home-color-abstratdetail);
     position: absolute;
     top: -1.5rem;
     right: 16rem;
@@ -38,12 +38,12 @@ header .header__right .header__image::after{
 
 }
 
-header .header__right .header__image .profile__img {
-    border-radius: 0.5rem;
+section .home__right .home__image .profile__img {
+    border-radius: 1rem;
     min-width: 25rem;
     max-width: 100%;
 }
-header .header__right .header__image .background {
+section .home__right .home__image .home__background {
     width: 60rem;
     position: absolute;
     top: -2rem;
@@ -53,10 +53,8 @@ header .header__right .header__image .background {
 
 
 
-
-
 @media only screen and (max-width: 768px) {
-    header {
+    section#home {
         flex-direction: column;
         text-align: center;
     }

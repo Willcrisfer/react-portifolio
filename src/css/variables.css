@@ -17,7 +17,7 @@
   --btn-theme-background: #b2b2bbd7;
   --h3-color: #53597e;
   --font-family: 'DM Sans', sans-serif;
-  
+  --home-color-abstratdetail:#eff4fc;
   
 }
 
@@ -33,10 +33,10 @@ body.light {
   --text-color: #343d48;
   --secondary-color: #0f2137;
   --color-nav-hover:#b2b2bb;
+  --home-color-abstratdetail:#eff4fc;
   
-  
-
   }
+  
 body.dark {
   --main-color: #000000e5;
   --primary-color: #f4f4f5d0;
@@ -49,5 +49,6 @@ body.dark {
   --secondary-color: #3d71af;
   --color-nav-hover:#6969a0;
   --burguer-color: #cacad4ab;
+  --home-color-abstratdetail:#f3f6fb0c;
 
 }

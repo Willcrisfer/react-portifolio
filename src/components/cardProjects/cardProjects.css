@@ -5,6 +5,7 @@
     min-width: 40rem;
     max-width: 47rem;
     height: auto;
+    border-radius: 1rem;
 }
  
 .projects__info  {
