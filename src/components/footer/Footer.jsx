@@ -27,6 +27,7 @@ const Footer = () => {
             
                 <p className="footer__copyright">
                     &copy; 2024 Willian Fernandes, All rights reserved
+                    <a href="https://www.flaticon.com/free-icons/musical-instrument" title="musical instrument icons">Musical instrument icons created by Freepik - Flaticon</a>
                 </p>
             </div>
         </footer>
