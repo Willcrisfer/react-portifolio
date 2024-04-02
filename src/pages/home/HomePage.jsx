@@ -34,4 +34,3 @@ function HomePage() {
 export default HomePage;
 
 
-//<a href="#about" className="btn btn-primary">Saiba mais</a>
