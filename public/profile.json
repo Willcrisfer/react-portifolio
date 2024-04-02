@@ -22,7 +22,7 @@
     ,"projects" : [
         {   
             "index" : 1,
-            "img" : "../src/assets/olddrums.jpg",
+            "img" : "../src/assets/olddrums.png",
             "title": "Um Kit de Bateria para quem não conheçe",
             "description" : "Atualmente estou mais presente nos Ritmos musicais Worship,Pop e Rock --- Nessa Foto eu estava estrenando minha nova SNARE (o tambor com as baquetas em cima) aiiii que coisa Linda.",
             "link" : "https://youtu.be/EaqkoxkrCh4?si=QuOPfzowepD5hhYU"
@@ -36,7 +36,7 @@
         },
         {   
             "index" : 3,
-            "img" :"../src/assets/sticks.jpg",
+            "img" :"../src/assets/sticks.png",
             "title": "Mais Música pra Vocês",
             "description" : "Essa Foto é apenas uma amostra da bateria que tenho em casa, felizmente para meus vizinhso ele é eletrônica (modelo Millenium MPS 750X) Please Use Phones e Aproveite",
             "link" : "https://www.youtube.com/watch?v=uLggmesbxVE&list=PLGEWGeOPaddpCK9aB0bfXVJrET2iUvOF4"

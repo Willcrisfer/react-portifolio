@@ -10,6 +10,7 @@ const Projects = () => {
 
     return (
         <section id="projects" className="projects max-width">
+            
             <div className="projects__content">
                 <h2 className="secondary-title">{profile?.projectsTitle}</h2>
                 <p>{profile?.projectsSubtitle}</p>
