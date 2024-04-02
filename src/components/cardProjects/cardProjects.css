@@ -37,6 +37,7 @@
 
 .projects__info .projects__item a:hover {
     text-decoration: underline;
+    color: var(--social-color);
     
 }
 
