@@ -5,8 +5,6 @@ import { useProfile } from "../../context/ProfileContext";
 
 
 
-
-
 const Footer = () => {
     const {profile} = useProfile();
 
@@ -21,14 +19,14 @@ const Footer = () => {
                 </div>
                 
                 {socialNetworks.map((network) => (
+
                       <a href={network.link} className="social-btn" target='_blank' id={network.name} key={network.name}  >
                           {network.icon} 
                     
                       </a>))} 
-                      
-                
+            
                 <p className="footer__copyright">
-                    @ 2024 Willian Fernandes
+                    &copy; 2024 Willian Fernandes, All rights reserved
                 </p>
             </div>
         </footer>

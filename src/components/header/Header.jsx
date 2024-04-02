@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useTheme } from "../../context/SwitchTheme";
 import scrollToTop from "../../components/scrollToTop/ScrollToTop";
-import menu from "../../assets/menu.svg";
-import logo from "../../assets/logo.jpg";
+import menu from "../../assets/header/menu.svg";
+import logo from "../../assets/header/logo.png";
 import "./header.css";
 
 const Header = () => {

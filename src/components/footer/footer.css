@@ -28,9 +28,10 @@ footer .footer__content .social-btn:hover{
     
 }
 
-footer .footer__content .footer__cpyright {
-   font-size: 1.4rem;
-   color: var(--tertiary-color);
+footer .footer__content .footer__copyright {
+   font-size: 1.6rem;
+   padding-bottom: 1.6rem;
+   
 }
 
 .tertiary-title .mb-s {
