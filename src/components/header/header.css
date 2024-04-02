@@ -1,4 +1,4 @@
-.navbar {
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -8,11 +8,11 @@
     color: var(--btn-nav-color);
     }
 
-.navbar img {
+.header img {
     width: 4.8rem;
 }
 
-.navbar .navbar__content {
+.header .header__content {
     padding: 3rem 4rem 1.5rem;
     display: flex;
     justify-content: space-between;
@@ -31,44 +31,44 @@
 
 }
 
-.navbar .navbar__content .navbar__links li {
+.header .header__content .header__links li {
     display: inline-block;
     
 }  
-.navbar .navbar__content .navbar__links li:not(:last-child) {
+.header .header__content .header__links li:not(:last-child) {
     margin-right: 2rem;
 } 
 
-.navbar .navbar__content .navbar__links a {
+.header .header__content .header__links a {
     padding: 1.5rem;
     display: inline-block;
     
 } 
 
-.navbar .navbar__content .navbar__links a:hover {
+.header .header__content .header__links a:hover {
     color: var(--color-nav-hover);
 } 
 
 
-.navbar .navbar__content .navbar__mobile,
-.navbar .navbar__content .navbar__mobile .mobile__links {
+.header .header__content .header__mobile,
+.header .header__content .header__mobile .mobile__links {
      display: none;
 }
 
-.navbar.active {
+.header.active {
     box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,0.1);
 }
 
 @media only screen and (max-width: 768px) {
-    .navbar .navbar__content .navbar__links {
+    .header .header__content .header__links {
         display: none;
     }  
-    .navbar .navbar__content .navbar__mobile {
+    .header .header__content .header__mobile {
         display: flex;
         align-items: center;
     }
 
-    .navbar .navbar__content .navbar__mobile img{
+    .header .header__content .header__mobile img{
         width: 3.6rem;
         height: 3.6rem;
         cursor: pointer;
@@ -76,7 +76,7 @@
         
     }
 
-    .navbar .navbar__content .navbar__mobile.active .mobile__links{
+    .header .header__content .header__mobile.active .mobile__links{
        display: flex;
        flex-direction: column;
        background-color: var(--nav-background);
@@ -90,11 +90,11 @@
 
     }
 
-    .navbar .navbar__content .navbar__mobile.active .mobile__links li{
+    .header .header__content .header__mobile.active .mobile__links li{
        margin-right: 0;
      }
 
-     .navbar .navbar__content .navbar__mobile.active .mobile__links li {
+     .header .header__content .header__mobile.active .mobile__links li {
         padding: 1rem;
         display: block;
         text-align: center;

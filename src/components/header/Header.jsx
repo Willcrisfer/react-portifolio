@@ -12,13 +12,13 @@ const Header = () => {
     
       
     return (
-        <nav className="navbar">
-            <div className="navbar__content max-width mb-0">
+        <nav className="header">
+            <div className="header__content max-width mb-0">
                 <NavLink to="/">
                     <img src={logo} alt="Willian Fernandes" />
                 </NavLink>
 
-                <ul className="navbar__links">
+                <ul className="header__links">
                     <li>
                         <NavLink to="/" onClick={scrollToTop} >Inicio</NavLink>
                     </li>
@@ -43,7 +43,7 @@ const Header = () => {
                     {known ? "Light" : "Dark"}
                 </button>
 
-                <div className="navbar__mobile">
+                <div className="header__mobile">
                     <img src={menu} alt="Menu" className="burguer" />
                     <ul className="mobile__links">
                         <li>
