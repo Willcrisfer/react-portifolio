@@ -19,7 +19,7 @@ function CardProjects() {
                             <a href={project.link} target='_blank'>See More &rarr;</a>
                             </div>
                             <div className="image">
-                                 <img src={project.img} alt="ecommerce" />
+                                 <img src={project.img} alt="Projects images" />
                             </div>
                         </li>
                     </ul>
