@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useTheme } from "../../context/SwitchTheme";
+import scrollToTop from "../../components/scrollToTop/ScrollToTop";
 import menu from "../../assets/menu.svg";
 import logo from "../../assets/logo.jpg";
 import "./header.css";
 
 const Header = () => {
     const { theme, setTheme } = useTheme();
-    const [known, setKnown] = useState(false);
-
+    const [known, setKnown] = useState(true);
+    
+      
     return (
         <nav className="navbar">
             <div className="navbar__content max-width mb-0">
@@ -18,16 +20,16 @@ const Header = () => {
 
                 <ul className="navbar__links">
                     <li>
-                        <NavLink to="/">Inicio</NavLink>
+                        <NavLink to="/" onClick={scrollToTop} >Inicio</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/About">Sobre</NavLink>
+                        <NavLink to="/About" onClick={scrollToTop} >Sobre</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Skills">Habilidade</NavLink>
+                        <NavLink to="/Skills"onClick={scrollToTop}>Habilidade</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Projects">Projetos</NavLink>
+                        <NavLink to="/Projects"onClick={scrollToTop}>Projetos</NavLink>
                     </li>
                     <li>
                         <a href="#footer">Contato</a>
@@ -45,16 +47,16 @@ const Header = () => {
                     <img src={menu} alt="Menu" className="burguer" />
                     <ul className="mobile__links">
                         <li>
-                            <NavLink to="/">Inicio</NavLink>
+                            <NavLink to="/" onClick={scrollToTop}>Inicio</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/About">Sobre</NavLink>
+                            <NavLink to="/About"onClick={scrollToTop}>Sobre</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/Skills">Habilidade</NavLink>
+                            <NavLink to="/Skills"onClick={scrollToTop}>Habilidade</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/Projects">Projetos</NavLink>
+                            <NavLink to="/Projects"onClick={scrollToTop}>Projetos</NavLink>
                         </li>
                         <li>
                             <a href="#footer">Contato</a>

@@ -72,13 +72,14 @@
         width: 3.6rem;
         height: 3.6rem;
         cursor: pointer;
+        background-color: var(--burguer-color);
         
     }
 
     .navbar .navbar__content .navbar__mobile.active .mobile__links{
        display: flex;
        flex-direction: column;
-       background-color: var(--white);
+       background-color: var(--nav-background);
        width: 100%;
        position: absolute;
        top: 98%;
@@ -93,7 +94,7 @@
        margin-right: 0;
      }
 
-     .navbar .navbar__content .navbar__mobile.active .mobile__links li a{
+     .navbar .navbar__content .navbar__mobile.active .mobile__links li {
         padding: 1rem;
         display: block;
         text-align: center;

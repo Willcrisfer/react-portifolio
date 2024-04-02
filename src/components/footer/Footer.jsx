@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import { socialNetworks } from "../Imports";
+import { socialNetworks } from "../iconsSocial/IconsSocial";
 import { useProfile } from "../../context/ProfileContext";
 
 
@@ -21,7 +21,7 @@ const Footer = () => {
                 </div>
                 
                 {socialNetworks.map((network) => (
-                      <a href={network.link} className="social-btn" id={network.name} key={network.name}  >
+                      <a href={network.link} className="social-btn" target='_blank' id={network.name} key={network.name}  >
                           {network.icon} 
                     
                       </a>))} 

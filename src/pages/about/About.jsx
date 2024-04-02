@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import { socialNetworks } from "../../components/Imports";
+import { socialNetworks } from "../../components/iconsSocial/IconsSocial";
 import { useProfile } from "../../context/ProfileContext";
 const About = () => {
     const {profile} = useProfile();
@@ -12,7 +12,7 @@ const About = () => {
                 <h2 className="secondary-title">{profile?.aboutTitle}</h2>
                 <p> {profile?.aboutWhoAmI} </p>
                 {socialNetworks.map((network) => (
-                    <a href={network.link} className="social-btn" id={network.name} key={network.name}  >
+                    <a href={network.link} className="social-btn" target='_blank' id={network.name} key={network.name}  >
                         {network.icon} 
                   
                     </a>

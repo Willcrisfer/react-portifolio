@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import imgprofile from "../../assets/profile.jpg";
 import abstract from "../../assets/abstract.svg";
 import { NavLink } from "react-router-dom";
-
-import "./homepage.css";
 import { useProfile } from "../../context/ProfileContext";
+import scrollToTop from "../../components/scrollToTop/ScrollToTop";
+import "./homepage.css";
+
+
+
 
 function HomePage() {
     
@@ -15,7 +18,7 @@ function HomePage() {
             <div className="header__left">
                 <h1>{profile?.name}</h1>
                 <p>{profile?.homeDescription}</p>
-                <NavLink to="/about"><button className="btn btn-primary">Sobre mim</button></NavLink>
+                <NavLink to="/about"><button className="btn btn-primary" onClick={scrollToTop} >Sobre mim</button></NavLink>
             </div>
             <div className="header__right">
                 <div className="header__image">
