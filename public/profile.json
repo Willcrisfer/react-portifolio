@@ -21,21 +21,21 @@
     
     ,"projects" : [
         {   
-            "index" : 1,
+            "id" : 1,
             "img" : "/src/assets/projectsPage/drums.png",
             "title": "Meu Kit de Bateria para quem não conheçe",
             "description" : "Atualmente estou mais presente nos Ritmos musicais Worship,Pop e Rock --- Nessa Foto eu estava estrenando minha nova SNARE (o tambor com as baquetas em cima) aiiii que coisa Linda.",
             "link" : "https://youtu.be/EaqkoxkrCh4?si=QuOPfzowepD5hhYU"
         },
         {
-            "index" : 2,
+            "id" : 2,
             "img" :"/src/assets/projectsPage/git.png",
             "title": "O meu Primeiro Projeto em HTML e CSS",
             "description" : "Confesso que ainda não esta finalizado e hoje eu percebo muito mais sobre o que estou fazendo, mas tenho orgulho desse trabalho.",
             "link" : "https://github.com/Willcrisfer/HTML-CSS.git"
         },
         {   
-            "index" : 3,
+            "id" : 3,
             "img" :"/src/assets/projectsPage/sticks.png",
             "title": "Mais Música pra Vocês",
             "description" : "Essa Foto é apenas uma amostra da bateria que tenho em casa, felizmente para meus vizinhso ele é eletrônica (modelo Millenium MPS 750X) Please Use Phones e Aproveite",
@@ -46,25 +46,25 @@
     ,"skills" : [
         {   
             
-            "index" : 1,
+            "id" : 1,
             "img": "../src/assets/skillsPage/macbook.png",
             "title" : "Tecnology Expert",
             "description" : "Seu PC esta Lento? Deixa comigo... Seu PC não funciona? Deixa comigo... Sua empresa precisa de um Bom profissional em gestão de servidores e Redes? Deixa comigo... Quer me contratar como Desenvolvedor Junior? TO DENTRO."        },
         {
             
-            "index" : 2,
+            "id" : 2,
             "img": "../src/assets/skillsPage/drums.png",
             "title" : "Like a Drumer",
             "description" : "Eu realmente AMO tocar bateria, tenho uma em casa e sinto que não a uso o quanto deveria... Toco sempre que posso e amo isso... Ainda tenho o sonho de fazer algo grande como baterista, particpar de uma boa Banda Musical, gravar musicas de sucesso... Sera que sou o unico Baterista com esse Sonho?" 
         },
         {   
-            "index" : 3,
+            "id" : 3,
             "img": "../src/assets/skillsPage/microfone.png",
             "title" : "Like a Singer",
             "description" : "Olhem Bem, não sou nenhum Bill Whiters, mas me viro Bem, sinto que posso ser melhor e tenho planos para estudar  para conseguir a melhor identidade Vocal e enfeitiçar as pessoas com minha ela haha. Atualmente canto pelo menos 1 vez por mes e dizem que continuo Bem... #vaiestudarwillian" 
         },
         {   
-            "index" : 4,
+            "id" : 4,
             "img": "../src/assets/skillsPage/coracao.png",
             "title" : "Lovely",
             "description" : "Bom, eu costumo gostar das pessoas, as vezes não sou muito falante, mas se eu gostar de Voce, não saio mais do seu Pé... Busco ser verdadeiro e ser a melhor pessoa que eu puder... Espero que tambem sejam assim Comigo... (NELSON---TENHA PIEDADE DA MINHA ALMA)" 

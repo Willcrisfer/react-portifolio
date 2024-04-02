@@ -1,8 +1,7 @@
 import React from "react";
 import "./skills.css";
 import { useProfile } from "../../context/ProfileContext";
-
-import MyComponent from "../../components/cardSkills/CardSkills";
+import CardSkills from "../../components/cardSkills/CardSkills";
 
 
 
@@ -19,7 +18,7 @@ const {profile} = useProfile();
                 <p className="skills__primary" >{profile?.skillsSubtitle}</p>
 
                 <ul>
-                    <MyComponent />
+                    <CardSkills />
                 </ul>
             </div>
         </section>
