@@ -15,7 +15,7 @@ const Header = () => {
         <nav className="header">
             <div className="header__content max-width mb-0">
                 <NavLink to="/">
-                    <img src={logo} alt="Willian Fernandes" />
+                    <img src={logo} onClick={scrollToTop} alt="Willian Fernandes" />
                 </NavLink>
 
                 <ul className="header__links">

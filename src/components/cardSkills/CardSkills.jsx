@@ -5,7 +5,7 @@ const CardSkills = () => {
     const { profile } = useProfile();
 
     if (!profile?.skills || profile.skills.length === 0) {
-        return <p>Nenhuma habilidade no momento.</p>;
+        return <p>Perdi Minhas Habilidades "Temporariamente espero Eu...".</p>;
     }
 
     return (

@@ -11,12 +11,16 @@ function HomePage() {
     
  const { profile }  = useProfile();
 
+    if (!profile) {    
+        return <div> <p>Nenhum Perfil no Momento</p></div>;
+    }
+
     return (
         <section id="home" className="max-width">
             <div className="home__left">
-                <h1>{profile?.name}</h1>
-                <p>{profile?.homeDescription}</p>
-                <NavLink to="/about"><button className="btn btn-primary" onClick={scrollToTop} >Sobre mim</button></NavLink>
+                <h1>{profile?.name || "Willian Fernandes"}</h1>
+                <p>{profile?.homeDescription || "Sem descrição no Momento"}</p>
+                <NavLink to="/about"><button className="btn btn-primary" onClick={scrollToTop}>Sobre mim</button></NavLink>
             </div>
             <div className="home__right">
                 <div className="home__image">

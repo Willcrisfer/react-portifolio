@@ -18,7 +18,7 @@ function CardProjects() {
                             <h3 className="tertiary-title">{project.title}</h3>
                             <p>{project.description}</p>
                             <a
-                                href={project.link}
+                                href={(project.link) ? project.link : '#'}
                                 target='_blank'
                                 rel='noopener noreferrer'
                                 aria-label={`See More about ${project.title}`}
@@ -27,7 +27,7 @@ function CardProjects() {
                             </a>
                         </div>
                         <div className="image">
-                            <img src={project.img} alt={`Project: ${project.title}`} />
+                            {project.img && <img src={project.img} alt={`Project: ${project.title}`} />}
                         </div>
                     </li>
                 </ul>
@@ -35,5 +35,7 @@ function CardProjects() {
         </div>
     );
 }
+
+
 
 export default CardProjects;
