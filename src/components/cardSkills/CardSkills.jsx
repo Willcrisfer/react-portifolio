@@ -1,23 +1,23 @@
-import React from 'react';
 import { useProfile } from '../../context/ProfileContext';
+import './cardSkills.css';
 
 const CardSkills = () => {
     const { profile } = useProfile();
 
     if (!profile?.skills || profile.skills.length === 0) {
-        return <p>Perdi Minhas Habilidades "Temporariamente espero Eu...".</p>;
+        return <p>Habilidades temporariamente indisponíveis.</p>;
     }
 
     return (
-        <ul className="skills__list">
+        <ol className="skills__list">
             {profile.skills.map(skill => (
                 <li key={skill.id}>
-                    {skill.img && <img src={skill.img} alt="Descriptions" />}
+                    <span>{skill.number}</span>
                     <h3>{skill.title}</h3>
                     <p>{skill.description}</p>
                 </li>
             ))}
-        </ul>
+        </ol>
     );
 }
 

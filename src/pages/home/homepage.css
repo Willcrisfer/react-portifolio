@@ -1,61 +1,11 @@
-
-
-section#home {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 4rem;
-    scroll-margin-top: 20 rem;
-}
-
-section .home__left {
-    max-width: 62 rem;
-    flex: 1;
-}
-
-section .home__left p {
-    max-width: 50rem;
-    margin-top: 2rem;
-    margin-bottom: 4rem ;
-}
-
-section .home__right .home__image{
-  position: relative;
-  line-height: 0;
-}
-
-section .home__right .home__image::after{
-    content: "";
-    display: block;
-    width: 80%;
-    height: 102%;
-    border: 1px solid var(--home-color-abstratdetail);
-    position: absolute;
-    top: -1.5rem;
-    right: 16rem;
-    border-radius: 0.5rem;
-    z-index: -1;
-
-}
-
-section .home__right .home__image .profile__img {
-    border-radius: 1rem;
-    min-width: 25rem;
-    max-width: 100%;
-}
-section .home__right .home__image .home__background {
-    width: 60rem;
-    position: absolute;
-    top: -2rem;
-    right: 22rem;
-    z-index: -1;
-}
-
-
-
-@media only screen and (max-width: 768px) {
-    section#home {
-        flex-direction: column;
-        text-align: center;
-    }
-}
+.hero { min-height: 100svh; display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: 6vw; padding-top: 12rem; padding-bottom: 7rem; }
+.home__left { position: relative; z-index: 2; }
+.home__left h1 { max-width: 7ch; margin: 2.4rem 0 3rem; }
+.home__left h1::after { content: '.'; color: var(--accent); }
+.home__left p { max-width: 55rem; font-size: 1.9rem; }
+.hero__actions { display: flex; align-items: center; gap: 3rem; margin-top: 4rem; }
+.home__image { position: relative; }
+.profile__img { width: 100%; height: min(72rem, 74vh); object-fit: cover; object-position: center 52%; border: 1px solid var(--accent); border-radius: 18rem 18rem 1.5rem 1.5rem; filter: saturate(.9) contrast(1.04); }
+.image__caption { position: absolute; right: -3.5rem; bottom: 7rem; color: var(--primary-color); font-size: 1.1rem; letter-spacing: .25em; text-transform: uppercase; transform: rotate(90deg); }
+@media (max-width: 800px) { .hero { grid-template-columns: 1fr; padding-top: 14rem; } .home__left { order: 2; margin-top: 2rem; } .profile__img { height: 54rem; } .image__caption { right: -4rem; } }
+@media (max-width: 500px) { .hero__actions { align-items: flex-start; flex-direction: column; } .profile__img { height: 44rem; border-radius: 12rem 12rem 1rem 1rem; } }

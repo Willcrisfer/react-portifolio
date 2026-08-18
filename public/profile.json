@@ -1,75 +1,42 @@
 {
-    "profile":
-    {"name" : "Willian Fernandes"
-    ,"descriptionFooter" : "Obrigado por permancer até aqui, estou disponivel nos contactos abaixo."
-    ,"homeDescription" : "Sou Natural de Belo Horizonte - MG (Brasil) tenho 28 anos e Vivo no Porto a 4 anos."
-    ,"aboutTitle" : "Who am I ?"
-    ,"aboutWhoAmI" : "Bom, se continuas aqui é porque deves ser o NELSON (: Ou gostou de mim então la vão mais informações Sobre Mim."
-    ,"aboutTitleTech" : "Musico -- Administrador de Sistemas -- Desenvolvedor"
-    ,"aboutSubtitleTech" : "Desenvolvedor? Estudando pra isso."
-    ,"aboutDescriptionMusic" :"#Musico -- Baterista -- Cantor -- Administrador de Sistemas -- Bom, se tem algo que eu goste de fazer tocar Bateria, eu batuco em coisas desde os meus 11 anos. Deve estar a pensar nos meus vizinhos (haha), bateria não é um instumento que passar desapercebido. Não tenho culpa ser Bom nisso :). Ahhh também me arrisco na Voz, sempre toquei e cantei na Igreja #fechadocomcristo , faço isso ainda Hoje, Ja tive uma banda musical e nos apresentamos algumas vezes, um otimo Tempo, mas a vida segue e as responsabilidades aumentam, mas isso me fez discrobrir outrs Paixões."
-    ,"aboutDescriptionTech1" : "#Tecnologia -- Tenho muitos dias e noites de Experiencia com Servidores,Redes,HelpDesk e outras coisitas que podes ver clicando no icone do linkedIn aqui nessa pagina, mas pouca com Programação, sempre foi um Bicho de 7 cabeças pra mim, mas desde o fim de 2023 resolvi fazer diferente então entramos em..."
-    ,"aboutDescriptionTech2" : "#Programação -- Um desafio que ainda estou a ultrapassar, no finzinho de Setembro de 2023 tive meu primeiro contato com Programação, uauuuu, sai da aula pensando (o que estou fazendo? What? Sera que consigo?) Bom, pelo menos estou tentando... acho que conseguindo... sei muito bem que tenho muitos Degraus a Subir, mas agora tenho a certeza de que Sou capaz"
-    ,"projectsTitle" : "Projetos em Destaque"
-    ,"projectsSubtitle" : "Um pouco das minhas paixões"
-    ,"skillsTitle" : "Minhas Principais Habilidades?"
-    ,"skillsSubtitle" : "Bom, ja percebeste que esse Portifolio é sobre Musica e Tecnologia, o que eu sei Fazer?"
-    ,"title" : "Frontend Developer"
-    ,"email" : "williancdsf950305@gmail.com"
-    ,"phone" : "(351) 913 965 124"
+  "profile": {
+    "name": "Willian Fernandes",
+    "eyebrow": "Baterista · Porto, Portugal",
+    "homeDescription": "Bateria com groove, presença e intenção. Do worship ao pop e rock, levo cada canção do primeiro pulso ao último impacto — ao vivo ou em estúdio.",
+    "aboutTitle": "O ritmo começou cedo. Nunca mais parou.",
+    "aboutWhoAmI": "Comecei a tocar aos 11 anos, em Belo Horizonte. Hoje, no Porto, transformo essa história em performances que unem precisão, dinâmica e emoção.",
+    "aboutDescriptionMusic": "Cresci musicalmente na igreja e encontrei no worship, pop e rock a minha linguagem. Toco para servir a canção, ligar a banda e fazer o público sentir cada momento. Também acrescento apoio vocal sempre que o projeto pede.",
+    "projectsTitle": "Assista às performances",
+    "projectsSubtitle": "Escolha uma performance completa ou um Short e assista sem sair do site.",
+    "skillsTitle": "O que levo para o palco",
+    "skillsSubtitle": "Técnica é o ponto de partida. O que entrego é confiança, escuta e presença.",
+    "descriptionFooter": "Procura um baterista para um concerto, gravação ou novo projeto? Vamos conversar.",
+    "email": "williancdsf950305@gmail.com",
+    "phone": "+351 000 000 000",
+    "projects": [
+      { "id": 1, "title": "Intro + 3 Reinos", "category": "Drum Cam", "description": "Performance ao vivo no Espetáculo de Natal da Hillsong Portugal.", "link": "https://www.youtube.com/watch?v=7BdzQYiN6Yw", "videoId": "7BdzQYiN6Yw" },
+      { "id": 2, "title": "Sou Grato por Seu Amor", "category": "Drum Cam", "description": "Performance ao vivo com groove, dinâmica e presença.", "link": "https://vimeo.com/1214482431/fb7966a9bf?fl=pl&fe=sh", "platform": "vimeo", "videoId": "1214482431", "videoHash": "fb7966a9bf" },
+      { "id": 3, "title": "Now To God + What A Beautiful Name", "category": "Legacy Nashville · Ao vivo", "description": "Duas canções numa performance que combina dinâmica, construção e precisão.", "link": "https://www.youtube.com/watch?v=Jbv9HZIM78Y", "videoId": "Jbv9HZIM78Y" },
+      { "id": 4, "title": "Common Emmanuel", "category": "Drum Cam", "description": "Outro momento do Espetáculo de Natal da Hillsong Portugal visto da bateria.", "link": "https://www.youtube.com/watch?v=lgCRMW_wBTY", "videoId": "lgCRMW_wBTY" },
+      { "id": 5, "title": "Good Grace", "category": "Drum Cam", "description": "Uma nova versão de Good Grace, com energia ao vivo e espaço para a canção respirar.", "link": "https://www.youtube.com/watch?v=vQwSvnMp-lc", "videoId": "vQwSvnMp-lc" },
+      { "id": 6, "title": "Yahweh Great I Am", "category": "Drum Cam · Gospel ao vivo", "description": "Drum cover ao vivo com intensidade, musicalidade e uma construção crescente.", "link": "https://www.youtube.com/watch?v=aico5-Ls8yc", "videoId": "aico5-Ls8yc" }
 
-    
-    ,"projects" : [
-        {   
-            "id" : 1,
-            "img" : "https://github.com/Willcrisfer/teste/blob/main/src/assets/projectsPage/drums.png?raw=true",
-            "title": "Meu Kit de Bateria para quem não conheçe",
-            "description" : "Atualmente estou mais presente nos Ritmos musicais Worship,Pop e Rock --- Nessa Foto eu estava estrenando minha nova SNARE (o tambor com as baquetas em cima) aiiii que coisa Linda.",
-            "link" : "https://youtu.be/EaqkoxkrCsh4?si=QuOPfzowepD5hhYU"
-        },
-        {
-            "id" : 2,
-            "img" : "https://github.com/Willcrisfer/teste/blob/main/src/assets/projectsPage/git.png?raw=true",
-            "title": "O meu Primeiro Projeto em HTML e CSS",
-            "description" : "Confesso que ainda não esta finalizado e hoje eu percebo muito mais sobre o que estou fazendo, mas tenho orgulho desse trabalho.",
-            "link" : "https://github.com/Willcrissfer/HTML-CSS.git"
-        },
-        {   
-            "id" : 3,
-            "img" : "https://github.com/Willcrisfer/teste/blob/main/src/assets/projectsPage/sticks.png?raw=true",
-            "title": "Mais Música pra Vocês",
-            "description" : "Essa Foto é apenas uma amostra da bateria que tenho em casa, felizmente para meus vizinhso ele é eletrônica (modelo Millenium MPS 750X) Please Use Phones e Aproveite",
-            "link" : "ht://www.youtube.com/watch?v=uLggmessbxVE&list=PLGEWGeOPaddpCK9aB0bfXVJrET2iUvOF4"
-        }
-
+    ],
+    "shorts": [
+      { "id": 1, "title": "I Will Praise You", "videoId": "jyoNIKeS8RE", "link": "https://www.youtube.com/shorts/jyoNIKeS8RE" },
+      { "id": 2, "title": "I Will Praise You · Parte 2", "videoId": "AY4b3KZ1Pcw", "link": "https://www.youtube.com/shorts/AY4b3KZ1Pcw" },
+      { "id": 3, "title": "That's My King", "videoId": "1r3vOPcHCkY", "link": "https://www.youtube.com/shorts/1r3vOPcHCkY" },
+      { "id": 4, "title": "No One But You", "videoId": "lU5USpjSZIc", "link": "https://www.youtube.com/shorts/lU5USpjSZIc" },
+      { "id": 5, "title": "Touch Heaven", "videoId": "O_GGLD23taI", "link": "https://www.youtube.com/shorts/O_GGLD23taI" },
+      { "id": 6, "title": "Now To God", "videoId": "-iNoBGdYIlA", "link": "https://www.youtube.com/shorts/-iNoBGdYIlA" },
+      { "id": 7, "title": "Novo Som", "videoId": "jObFg5i5WxQ", "link": "https://www.youtube.com/shorts/jObFg5i5WxQ" },
+      { "id": 8, "title": "Heart Like Heaven", "videoId": "ZYryMIKicoo", "link": "https://www.youtube.com/shorts/ZYryMIKicoo" }
+    ],
+    "skills": [
+      { "id": 1, "number": "01", "title": "Bateria", "description": "Grooves sólidos e dinâmicos que sustentam a banda sem disputar espaço com a canção." },
+      { "id": 2, "number": "02", "title": "Performance", "description": "Energia, concentração e leitura de palco para acompanhar cada mudança da música." },
+      { "id": 3, "number": "03", "title": "Voz", "description": "Apoio vocal integrado à performance quando o arranjo pede mais uma camada." },
+      { "id": 4, "number": "04", "title": "Colaboração", "description": "Preparação, pontualidade e comunicação clara — dentro e fora do palco." }
     ]
-    ,"skills" : [
-        {   
-            
-            "id" : 1,
-            "img" : "https://raw.githubusercontent.com/Willcrisfer/teste/main/src/assets/skillsPage/macbook.png",
-            "title" : "Tecnology Expert",
-            "description" : "Seu PC esta Lento? Deixa comigo... Seu PC não funciona? Deixa comigo... Sua empresa precisa de um Bom profissional em gestão de servidores e Redes? Deixa comigo... Quer me contratar como Desenvolvedor Junior? TO DENTRO."        },
-        {
-            
-            "id" : 2,
-            "img" : "https://raw.githubusercontent.com/Willcrisfer/teste/main/src/assets/skillsPage/drums.png",
-            "title" : "Like a Drumer",
-            "description" : "Eu realmente AMO tocar bateria, tenho uma em casa e sinto que não a uso o quanto deveria... Toco sempre que posso e amo isso... Ainda tenho o sonho de fazer algo grande como baterista, particpar de uma boa Banda Musical, gravar musicas de sucesso... Sera que sou o unico Baterista com esse Sonho?" 
-        },
-        {   
-            "id" : 3,
-            "img" : "https://raw.githubusercontent.com/Willcrisfer/teste/main/src/assets/skillsPage/microfone.png",
-            "title" : "Like a Singer",
-            "description" : "Olhem Bem, não sou nenhum Bill Whiters, mas me viro Bem, sinto que posso ser melhor e tenho planos para estudar  para conseguir a melhor identidade Vocal e enfeitiçar as pessoas com minha ela haha. Atualmente canto pelo menos 1 vez por mes e dizem que continuo Bem... #vaiestudarwillian" 
-        },
-        {   
-            "id" : 4,
-            "img" : "https://raw.githubusercontent.com/Willcrisfer/teste/main/src/assets/skillsPage/coracao.png",
-            "title" : "Lovely",
-            "description" : "Bom, eu costumo gostar das pessoas, as vezes não sou muito falante, mas se eu gostar de Voce, não saio mais do seu Pé... Busco ser verdadeiro e ser a melhor pessoa que eu puder... Espero que tambem sejam assim Comigo... (NELSON---TENHA PIEDADE DA MINHA ALMA)" 
-        }
-     
-    ]
-}}
-
+  }
+}

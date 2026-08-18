@@ -1,41 +1,73 @@
-import React from 'react';
-import { useProfile } from '../../context/ProfileContext';
-import './cardProjects.css';
+import { useState } from "react";
+import { useProfile } from "../../context/ProfileContext";
+import vimeoThumbnail from "../../assets/portfolio/live-smile-color.jpg";
+import "./cardProjects.css";
 
 function CardProjects() {
-    const { profile } = useProfile();
+  const { profile } = useProfile();
+  const videos = [
+    ...(profile?.projects || []).map((video) => ({ ...video, format: "Performance", platform: video.platform || "youtube" })),
+    ...(profile?.shorts || []).map((video) => ({ ...video, format: "Short", platform: "youtube", isShort: true })),
+  ].map((video) => ({ ...video, key: `${video.platform}-${video.format}-${video.id}` }));
+  const [selectedKey, setSelectedKey] = useState(null);
+  const selected = videos.find((video) => video.key === selectedKey) || videos[0];
 
-    if (!profile?.projects || profile.projects.length === 0) {
-        return <div> <p>Nenhum Projeto no Momento.</p></div>;
-    }
+  if (!selected) return <p>Nenhum vídeo no momento.</p>;
 
-    return (
-        <div className='projects__info'>
-            {profile.projects.map(project => (
-                <ul className='projects__list' key={project.id}>
-                    <li className='projects__item'>
-                        <div className='projects__description'>
-                            <h3 className="tertiary-title">{project.title}</h3>
-                            <p>{project.description}</p>
-                            <a
-                                href={(project.link) ? project.link : '#'}
-                                target='_blank'
-                                rel='noopener noreferrer'
-                                aria-label={`See More about ${project.title}`}
-                            >
-                                See More &rarr;
-                            </a>
-                        </div>
-                        <div className="image">
-                            {project.img && <img src={project.img} alt={`Project: ${project.title}`} />}
-                        </div>
-                    </li>
-                </ul>
-            ))}
+  const isVimeo = selected.platform === "vimeo";
+  const embedUrl = isVimeo
+    ? `https://player.vimeo.com/video/${selected.videoId}?h=${selected.videoHash}&title=0&byline=0&portrait=0`
+    : `https://www.youtube-nocookie.com/embed/${selected.videoId}?rel=0`;
+
+  return (
+    <div className="video-gallery">
+      <div className={`video-player ${selected.isShort ? "video-player--portrait" : ""}`}>
+        <iframe
+          key={selected.key}
+          src={embedUrl}
+          title={selected.title}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </div>
+
+      <div className="video-now-playing">
+        <div>
+          <span className="project__category">A assistir · {selected.format}</span>
+          <h3 className="tertiary-title">{selected.title}</h3>
         </div>
-    );
+        <a href={selected.link} target="_blank" rel="noopener noreferrer">
+          Abrir no {isVimeo ? "Vimeo" : "YouTube"} <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <div className="video-playlist" aria-label="Escolher vídeo">
+        {videos.map((video, index) => (
+          <button
+            type="button"
+            className={video.key === selected.key ? "video-card active" : "video-card"}
+            onClick={() => setSelectedKey(video.key)}
+            aria-pressed={video.key === selected.key}
+            key={video.key}
+          >
+            <span className={`video-card__image ${video.isShort ? "video-card__image--short" : ""}`}>
+              <img
+                src={video.platform === "vimeo" ? vimeoThumbnail : `https://i.ytimg.com/vi/${video.videoId}/hqdefault.jpg`}
+                alt=""
+                loading="lazy"
+              />
+              {video.platform === "vimeo" && <span className="video-card__provider">Vimeo</span>}
+              <span className="video-card__play" aria-hidden="true">▶</span>
+            </span>
+            <span className="video-card__meta">
+              <span>{String(index + 1).padStart(2, "0")} · {video.format}</span>
+              <strong>{video.title}</strong>
+            </span>
+          </button>
+        ))}
+      </div>
+    </div>
+  );
 }
-
-
 
 export default CardProjects;

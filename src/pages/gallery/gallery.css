@@ -1,0 +1,19 @@
+.gallery { padding-top: 5rem; padding-bottom: 15rem; border-top: 1px solid var(--line); }
+.gallery__intro { display: grid; grid-template-columns: .35fr 1fr 1fr; gap: 5vw; align-items: end; margin-bottom: 6rem; }
+.gallery__intro p { max-width: 45rem; padding-bottom: .5rem; }
+.carousel { outline: none; }
+.carousel__stage { position: relative; height: min(72rem, 72vh); overflow: hidden; border-radius: 1rem; background: var(--surface); }
+.carousel__stage > img { width: 100%; height: 100%; object-fit: contain; object-position: center; }
+.carousel__stage::after { content: ''; position: absolute; inset: 50% 0 0; background: linear-gradient(transparent, rgba(0,0,0,.72)); pointer-events: none; }
+.carousel__label, .carousel__count { position: absolute; z-index: 2; bottom: 3rem; color: #fff; font-size: 1.2rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
+.carousel__label { left: 3rem; }
+.carousel__count { right: 15rem; }
+.carousel__controls { position: absolute; z-index: 3; right: 3rem; bottom: 2rem; display: flex; gap: .8rem; }
+.carousel__controls button { width: 4.8rem; height: 4.8rem; border: 1px solid rgba(255,255,255,.45); border-radius: 50%; color: #fff; background: rgba(0,0,0,.35); backdrop-filter: blur(8px); }
+.carousel__controls button:hover { color: #fff; background: var(--accent); border-color: var(--accent); }
+.carousel__thumbs { display: grid; grid-template-columns: repeat(8, 1fr); gap: .8rem; margin-top: 1.2rem; }
+.carousel__thumbs button { height: 9rem; overflow: hidden; border: 2px solid transparent; border-radius: .5rem; opacity: .5; background: var(--surface); transition: opacity .2s, border-color .2s; }
+.carousel__thumbs button:hover, .carousel__thumbs button.active { opacity: 1; border-color: var(--accent); }
+.carousel__thumbs img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 850px) { .gallery { padding-bottom: 10rem; } .gallery__intro { grid-template-columns: 1fr; gap: 2.5rem; } .carousel__stage { height: 58rem; } .carousel__thumbs { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 520px) { .carousel__stage { height: 52rem; } .carousel__label { left: 1.8rem; bottom: 7.8rem; } .carousel__count { left: 1.8rem; right: auto; bottom: 3rem; } .carousel__controls { right: 1.8rem; } .carousel__thumbs button { height: 7rem; } }

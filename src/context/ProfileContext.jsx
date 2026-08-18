@@ -7,7 +7,7 @@ export const ProfileProvider = ({children}) => {
     
     useEffect(() => {
         try {
-            fetch ("/profile.json", {
+            fetch (`${import.meta.env.BASE_URL}profile.json`, {
                 headers: {
                     accept: "application/json"
                 }

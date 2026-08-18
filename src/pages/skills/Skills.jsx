@@ -1,4 +1,3 @@
-import React from "react";
 import "./skills.css";
 import { useProfile } from "../../context/ProfileContext";
 import CardSkills from "../../components/cardSkills/CardSkills";
@@ -15,12 +14,11 @@ const {profile} = useProfile();
     return (
         <section id="skills" className="skills">
             <div className="skills__content max-width">
-                <h2 className="tertiary-title">{profile?.skillsTitle ||"Minhas Habilidades"}</h2>
+                <div className="section-label">04 / Experiência</div>
+                <h2 className="secondary-title">{profile?.skillsTitle ||"Minhas Habilidades"}</h2>
                 <p className="skills__primary" >{profile?.skillsSubtitle || "Sem habilidades no Momento ;("}</p>
 
-                <ul>
-                    <CardSkills />
-                </ul>
+                <CardSkills />
 
             </div>
         </section>

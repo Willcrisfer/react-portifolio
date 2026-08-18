@@ -1,71 +1,48 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useState } from "react";
 import { useTheme } from "../../context/SwitchTheme";
-import scrollToTop from "../../components/scrollToTop/ScrollToTop";
 import menu from "../../assets/header/menu.svg";
-import logo from "../../assets/header/logo.png";
 import "./header.css";
 
+const links = [
+  ["Início", "home"],
+  ["Sobre", "about"],
+  ["Galeria", "gallery"],
+  ["Vídeos", "projects"],
+  ["Experiência", "skills"],
+  ["Contacto", "footer"],
+];
+
 const Header = () => {
-    const { theme, setTheme } = useTheme();
-    const [known, setKnown] = useState(true);
-    
-      
-    return (
-        <nav className="header">
-            <div className="header__content max-width mb-0">
-                <NavLink to="/">
-                    <img src={logo} onClick={scrollToTop} alt="Willian Fernandes" />
-                </NavLink>
+  const { theme, setTheme } = useTheme();
+  const [menuOpen, setMenuOpen] = useState(false);
 
-                <ul className="header__links">
-                    <li>
-                        <NavLink to="/" onClick={scrollToTop} >Inicio</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/About" onClick={scrollToTop} >Sobre</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/Skills"onClick={scrollToTop}>Habilidade</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/Projects"onClick={scrollToTop}>Projetos</NavLink>
-                    </li>
-                    <li>
-                        <a href="#footer">Contato</a>
-                    </li>
-                </ul>
-
-                <button
-                    className="btn__theme"
-                    onClick={() => {setTheme(theme === "light" ? "dark" : "light");setKnown(!known);}}
-                >
-                    {known ? "Light" : "Dark"}
-                </button>
-
-                <div className="header__mobile">
-                    <img src={menu} alt="Menu" className="burguer" />
-                    <ul className="mobile__links">
-                        <li>
-                            <NavLink to="/" onClick={scrollToTop}>Inicio</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/About"onClick={scrollToTop}>Sobre</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/Skills"onClick={scrollToTop}>Habilidade</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/Projects"onClick={scrollToTop}>Projetos</NavLink>
-                        </li>
-                        <li>
-                            <a href="#footer">Contato</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    );
+  return (
+    <nav className="header" aria-label="Navegação principal">
+      <div className="header__content max-width mb-0">
+        <a className="wordmark" href="#home" aria-label="Início">WF<span>.</span></a>
+        <ul className="header__links">
+          {links.map(([label, id]) => <li key={id}><a href={`#${id}`}>{label}</a></li>)}
+        </ul>
+        <button
+          className="btn__theme"
+          onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+          aria-label={`Ativar tema ${theme === "light" ? "escuro" : "claro"}`}
+        >
+          {theme === "light" ? "●" : "○"}
+        </button>
+        <div className={`header__mobile ${menuOpen ? "active" : ""}`}>
+          <button className="menu__button" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen} aria-label="Abrir menu">
+            <img src={menu} alt="" />
+          </button>
+          <ul className="mobile__links">
+            {links.map(([label, id]) => (
+              <li key={id}><a href={`#${id}`} onClick={() => setMenuOpen(false)}>{label}</a></li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
 };
 
 export default Header;
