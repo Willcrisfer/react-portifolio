@@ -6,6 +6,7 @@ import Gallery from './pages/gallery/Gallery.jsx'
 import Projects from './pages/projects/Projects.jsx'
 import Skills from './pages/skills/Skills.jsx'
 import Footer from './components/footer/Footer.jsx'
+import WhatsAppButton from './components/whatsappButton/WhatsAppButton.jsx'
 import "./css/extends.css"
 import './index.css'
 
@@ -25,6 +26,7 @@ const Layout = () => {
         <Projects />
         <Skills />
       </main>
+      <WhatsAppButton />
       <Footer />
     </>
   
