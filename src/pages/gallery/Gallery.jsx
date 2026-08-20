@@ -7,15 +7,25 @@ import liveMotion from "../../assets/portfolio/live-motion-color.jpg";
 import livePortrait from "../../assets/portfolio/live-portrait-color.jpg";
 import rehearsal from "../../assets/portfolio/studio-rehearsal.jpg";
 import drumKitPortrait from "../../assets/portfolio/drum-kit-portrait.jpg";
+import stagePortraitBlue from "../../assets/portfolio/stage-portrait-blue.jpeg";
+import livePerformanceCloseup from "../../assets/portfolio/live-performance-closeup.jpeg";
+import stageKitRed from "../../assets/portfolio/stage-kit-red.jpeg";
+import drummerViewStage from "../../assets/portfolio/drummer-view-stage.jpeg";
+import livePerformanceProfile from "../../assets/portfolio/live-performance-profile.jpeg";
 import "./gallery.css";
 
 const photos = [
+  { src: stagePortraitBlue, alt: "Retrato de Willian sentado à bateria sob luzes azuis", label: "Pronto para tocar" },
   { src: liveSmileColor, alt: "Willian sorrindo enquanto toca bateria ao vivo", label: "Ao vivo · Porto" },
+  { src: livePerformanceCloseup, alt: "Willian toca bateria ao vivo com baquetas em movimento", label: "Energia ao vivo", cropLetterbox: true },
   { src: liveKit, alt: "Willian atrás do kit de bateria numa fotografia a preto e branco", label: "Drum room" },
+  { src: stageKitRed, alt: "Kit de bateria iluminado em vermelho visto a partir do palco", label: "Antes do espetáculo" },
   { src: liveSmileBw, alt: "Willian durante uma performance a preto e branco", label: "Entre canções" },
   { src: liveFocus, alt: "Retrato de perfil durante uma atuação", label: "Concentração" },
+  { src: livePerformanceProfile, alt: "Willian concentrado enquanto toca bateria ao vivo", label: "No ritmo", cropLetterbox: true },
   { src: liveMotion, alt: "Willian em movimento durante uma atuação com luz azul", label: "Em movimento" },
   { src: livePortrait, alt: "Retrato de Willian com baquetas durante uma atuação", label: "No palco" },
+  { src: drummerViewStage, alt: "Vista do kit de bateria para a plateia antes de uma atuação", label: "Vista do baterista" },
   { src: rehearsal, alt: "Ensaio de banda visto a partir da bateria", label: "Em estúdio" },
   { src: drumKitPortrait, alt: "Willian com o seu kit de bateria visto de cima", label: "O kit" },
 ];
@@ -29,19 +39,24 @@ const Gallery = () => {
   return (
     <section id="gallery" className="gallery max-width">
       <div className="gallery__intro">
-        <div className="section-label">02 / Galeria</div>
+        <div className="section-label">03 / Galeria</div>
         <h2 className="secondary-title">Entre o palco<br />e o estúdio</h2>
-        <p>Momentos que mostram a energia, a concentração e a alegria por trás de cada performance.</p>
+        <p>Alguns momentos registrados em fotos.</p>
       </div>
 
       <div className="carousel" tabIndex="0" aria-label="Carrossel de fotografias. Use as setas para navegar." onKeyDown={(event) => {
         if (event.key === "ArrowLeft") previous();
         if (event.key === "ArrowRight") next();
       }}>
-        <div className="carousel__stage" aria-live="polite">
-          <img src={photo.src} alt={photo.alt} />
-          <span className="carousel__label">{photo.label}</span>
-          <span className="carousel__count">{String(current + 1).padStart(2, "0")} / {String(photos.length).padStart(2, "0")}</span>
+        <div
+          className={`carousel__stage${photo.cropLetterbox ? " carousel__stage--letterbox" : ""}`}
+          aria-live="polite"
+        >
+          <img
+            className={photo.cropLetterbox ? "carousel__photo--crop-letterbox" : ""}
+            src={photo.src}
+            alt={photo.alt}
+          />
           <div className="carousel__controls">
             <button type="button" onClick={previous} aria-label="Fotografia anterior">←</button>
             <button type="button" onClick={next} aria-label="Fotografia seguinte">→</button>

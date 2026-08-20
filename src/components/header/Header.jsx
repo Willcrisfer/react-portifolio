@@ -6,8 +6,8 @@ import "./header.css";
 const links = [
   ["Início", "home"],
   ["Sobre", "about"],
-  ["Galeria", "gallery"],
   ["Vídeos", "projects"],
+  ["Galeria", "gallery"],
   ["Experiência", "skills"],
   ["Contacto", "footer"],
 ];

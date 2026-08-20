@@ -52,7 +52,7 @@ function CardProjects() {
           >
             <span className={`video-card__image ${video.isShort ? "video-card__image--short" : ""}`}>
               <img
-                src={video.platform === "vimeo" ? vimeoThumbnail : `https://i.ytimg.com/vi/${video.videoId}/hqdefault.jpg`}
+                src={video.platform === "vimeo" ? (video.thumbnail || vimeoThumbnail) : `https://i.ytimg.com/vi/${video.videoId}/hqdefault.jpg`}
                 alt=""
                 loading="lazy"
               />

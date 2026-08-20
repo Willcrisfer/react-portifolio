@@ -22,8 +22,8 @@ const Layout = () => {
       <main>
         <HomePage />
         <About />
-        <Gallery />
         <Projects />
+        <Gallery />
         <Skills />
       </main>
       <WhatsAppButton />
