@@ -62,9 +62,9 @@ export default async function handler(request, response) {
         from: `Willian Fernandes <${gmailUser}>`,
         to: email,
         replyTo: gmailUser,
-        subject: "Recebi a sua mensagem — Willian Fernandes",
-        text: `Olá, ${name}!\n\nObrigado pelo contacto. Recebi a sua mensagem sobre “${subject}” e responderei assim que possível.\n\nWillian Fernandes`,
-        html: `<p>Olá, ${safeName}!</p><p>Obrigado pelo contacto. Recebi a sua mensagem sobre <strong>“${safeSubject}”</strong> e responderei assim que possível.</p><p>Willian Fernandes</p>`,
+        subject: "Recebi a sua mensagem — Willian Fernandes Music",
+        text: `Olá, ${name}!\n\nObrigado pelo contacto. Recebi a sua mensagem sobre “${subject}” e responderei assim que possível.\n\nWillian Fernandes Music`,
+        html: `<p>Olá, ${safeName}!</p><p>Obrigado pelo contacto. Recebi a sua mensagem sobre <strong>“${safeSubject}”</strong> e responderei assim que possível.</p><p>Willian Fernandes Music</p>`,
       }),
     ]);
     return response.status(200).json({ message: "Mensagem enviada com sucesso." });
