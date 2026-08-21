@@ -27,7 +27,10 @@ const ContactForm = () => {
       }
 
       setForm(initialForm);
-      setStatus({ type: "success", message: "Mensagem enviada. Enviámos também uma confirmação para o seu e-mail." });
+      setStatus({
+        type: "success",
+        message: "Mensagem enviada. Enviámos também uma confirmação para o seu e-mail — verifique a pasta de spam caso não a encontre na caixa de entrada.",
+      });
     } catch (error) {
       setStatus({ type: "error", message: error.message || "Ocorreu um erro. Por favor, tente novamente." });
     }
