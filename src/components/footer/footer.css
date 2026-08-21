@@ -4,6 +4,24 @@ footer .eyebrow, footer p, footer a { color: rgba(255,255,255,.82); }
 footer .eyebrow { color: #4b1609; }
 footer .secondary-title { color: #fff; margin: 2.5rem auto 3rem; font-size: clamp(5rem, 9vw, 10rem); }
 .footer__content > p { max-width: 55rem; margin-inline: auto; }
+.contact-form { display: grid; gap: 1.8rem; width: min(100%, 72rem); margin: 4rem auto 0; text-align: left; }
+.contact-form__row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.8rem; }
+.contact-form label { display: grid; gap: .8rem; color: #fff; font-size: 1.3rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+.contact-form input, .contact-form textarea { width: 100%; border: 1px solid rgba(255,255,255,.55); border-radius: .6rem; outline: none; background: rgba(255,255,255,.12); color: #fff; font: inherit; font-size: 1.6rem; text-transform: none; transition: border-color .2s, background .2s, box-shadow .2s; }
+.contact-form input { min-height: 5.2rem; padding: 0 1.6rem; }
+.contact-form textarea { min-height: 15rem; padding: 1.4rem 1.6rem; resize: vertical; }
+.contact-form input:focus, .contact-form textarea:focus { border-color: #fff; background: rgba(255,255,255,.18); box-shadow: 0 0 0 3px rgba(255,255,255,.18); }
+.contact-form__website { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+.contact-form__submit { justify-self: center; min-height: 5.4rem; padding: 0 3rem; border: 0; border-radius: 100px; background: #321007; color: #fff; font-weight: 700; transition: transform .2s, background .2s, opacity .2s; }
+.contact-form__submit:hover:not(:disabled) { background: #170703; transform: translateY(-2px); }
+.contact-form__submit:disabled { cursor: wait; opacity: .65; }
+.contact-form__status { min-height: 2.4rem; color: rgba(255,255,255,.9); text-align: center; }
+.contact-form__status--success { color: #fff; font-weight: 600; }
+.contact-form__status--error { color: #321007; font-weight: 700; }
 .footer__socials { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; margin: 4rem 0 8rem; }
 .footer__socials a { display: inline-flex; align-items: center; gap: .8rem; padding: 1rem 1.6rem; border: 1px solid rgba(255,255,255,.35); border-radius: 100px; text-transform: capitalize; }
 .footer__copyright { padding-top: 2rem; border-top: 1px solid rgba(255,255,255,.25); font-size: 1.25rem; }
+
+@media (max-width: 650px) {
+  .contact-form__row { grid-template-columns: 1fr; }
+}
