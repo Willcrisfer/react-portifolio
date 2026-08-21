@@ -10,10 +10,6 @@ const Footer = () => {
         <span className="eyebrow">Contacto</span>
         <h2 className="secondary-title">Vamos criar<br />algo juntos?</h2>
         <p>{profile?.descriptionFooter}</p>
-        <div className="footer__contact">
-          <a href={`mailto:${profile?.email}`}>{profile?.email || "Email não disponível"}</a>
-          <a href={`tel:${profile?.phone?.replace(/\s/g, '')}`}>{profile?.phone || "Telefone não disponível"}</a>
-        </div>
         <div className="footer__socials">
           {socialNetworks.map((network) => (
             <a key={network.name} href={network.link} className="social-btn" target="_blank" rel="noopener noreferrer" aria-label={network.name}>
